@@ -1,0 +1,85 @@
+body{
+    /*background-color: rgb(212, 212, 212);*/ 
+    margin:0;
+}
+.login{
+    border:none;
+    border-bottom: 1px solid #cbb09c;
+}
+h4{
+    text-align: center;
+}
+.navagation{
+    /*position: fixed;*/
+    width:100%;
+
+}
+.brand-text{
+   color: #cbb09c !important;
+}
+.addmore{
+    margin: 10px;  
+    background-color: #cbb09c !important; 
+    border: none;
+    color: white;
+}
+.front_page_form{
+/*  display: flex;
+    flex-direction:column;  */ 
+    justify-content: center;
+    background-color:white;
+    margin: 20px auto;
+    padding: 30px;
+    width: 500px;
+    border-radius: 5px;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    margin-top:200px;
+    position: fixed;
+    background-color:rgb(255, 255, 255);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.button{
+    background-color: #cbb09c !important; 
+}
+.display_page{
+    margin-top: 20px;
+}
+.cards{
+    text-align: center;
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    border:none;
+    padding: 10px;
+}
+.card-action{
+    background-color:#cbb09c;
+    text-align: center;
+    width:200px;
+    margin: 2px 0 10px 0px;
+}
+.card-action:hover{
+    opacity: 0.9 !important;
+}
+.list{
+    list-style: none;
+}
+.detail{
+    justify-self:auto;
+    margin: 100px auto;
+    background-color: #AD9E9C !important;
+}
+.card_content{
+    text-align: center;
+}
+.delete_btn{
+    background-color: #AD9E9C !important;
+}
