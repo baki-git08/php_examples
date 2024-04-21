@@ -1,0 +1,19 @@
+.navbar-font{
+    font-size: 10px;
+}
+
+.navbar-font:hover{
+    color: white;
+}
+
+.logo-details{
+    /*background-color: darkgreen;*/
+    padding: 0 100 0;
+}
+
+.homepage-form{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    width: 500px;
+}
