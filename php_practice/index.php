@@ -52,7 +52,6 @@
             <input name="username" type="text" placeholder="Enter your name"> 
             <u class="text-danger"><?php echo $errors['username']; ?></u>
 
-
             <label for="email">Email: </label>
             <input name="email"type="email" placeholder="Enter.email@gmail.com">
             <u class="text-danger"><?php echo $errors['email']; ?></u>
