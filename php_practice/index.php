@@ -1,13 +1,11 @@
 <?php
 
-   if(isset($_GET['submit'])){
+    $errors = array('email'=> '', 'username' =>'', 'password'=> '');
 
+   if(isset($_GET['submit'])){
 
     //special htmlspecialchars, converts input to html entited
     // prevents attacks 
-
-    $errors = array('email'=> '', 'username' =>'', 'password'=> '');
-
     if(empty($_GET['username'])){
         $errors['username'] = 'Username is required <br>';
     } else {
@@ -36,10 +34,12 @@
         }
     }
 
-    header('Location: homepage.php');   
+    if(!array_filter($errors)){
+        header('Location: homepage.php'); 
+    }
+    //header('Location: homepage.php');   
 }
 ?>
-
 
 
 <html lang="en">
@@ -50,10 +50,17 @@
         <form class="homepage-form" action="homepage.php" method="GET">
             <label for="username">Username: </label> 
             <input name="username" type="text" placeholder="Enter your name"> 
+            <u class="text-danger"><?php echo $errors['username']; ?></u>
+
+
             <label for="email">Email: </label>
             <input name="email"type="email" placeholder="Enter.email@gmail.com">
+            <u class="text-danger"><?php echo $errors['email']; ?></u>
+
             <label for="password">Password</label>
             <input name="password" type="password" placeholder="!@#$%^&*(">
+            <u class="text-danger"><?php echo $errors['email']; ?></u>
+
             <input name="submit" type="submit" value="SUBMIT" class="btn btn-danger">
         </form>
     </div>

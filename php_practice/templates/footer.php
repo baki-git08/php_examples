@@ -1,6 +1,7 @@
-<?php include('linker/linker.php'); ?>
-
-    <footers style="background-color:blue;">
-        
+    <footer>
+        copyright
+        <p>For more information: </p>
+        <p>Contact: </p>
+        <p>Email: </p>
     </footer>
 </body>

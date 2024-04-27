@@ -17,3 +17,16 @@
     flex-direction: column;
     width: 500px;
 }
+
+.frontbody{
+    height: 1300px;
+    width: 100%;
+    display: flex;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: red;
+}
+
